@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 
-class NavBar extends React.Component {
+export default class NavBar extends React.Component {
   render() {
     const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];
     const navLinks = pages.map(page => {
@@ -15,5 +15,3 @@ class NavBar extends React.Component {
     return <nav>{navLinks}</nav>;
   }
 }
-
-export default NavBar;
