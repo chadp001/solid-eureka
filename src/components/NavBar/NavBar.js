@@ -1,17 +1,36 @@
 import React from 'react';
-import './NavBar.css';
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from './NavbarElements';
+
 
 export default class NavBar extends React.Component {
   render() {
-    const pages = ['home', 'blog', 'pics', 'bio', 'art', 'shop', 'about', 'contact'];
+    const pages = ['Home', 'Blog', 'Work', 'Services', 'Playground', 'About', 'Contact'];
     const navLinks = pages.map(page => {
       return (
-        <a href={'/' + page}>
+        <NavLink to={'/' + page}>
           {page}
-        </a>
+        </NavLink>
       )
     });
-
-    return <nav>{navLinks}</nav>;
+    return (
+      <>
+        <Nav>
+          <Bars />
+          <NavMenu>
+            {navLinks}
+          </NavMenu>
+          <NavBtn>
+            <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          </NavBtn>
+        </Nav>
+      </>
+    );
   }
 }
