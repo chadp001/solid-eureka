@@ -7,7 +7,7 @@ background: #FFFFFF;
 height: 50px;
 display: flex;
 justify-content: space-between;
-padding: 0.2rem calc((100vw - 1500px) / 2);
+padding: 0.2rem calc((100vw - 1200px) / 2);
 z-index: 12;
 /* Third Nav */
 /* justify-content: flex-start; */
@@ -19,21 +19,18 @@ display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
-height: 250%;
+height: 120%;
 cursor: pointer;
 &.active {
-	color: #808080;
+    background: #282c34;
+	color: #fff;
     padding: 0 1rem;
-    border-radius: 50px;
-	background: #fff;
-    border: 1px solid gray;
 }
 &:hover {
 	transition: all 0.3s ease-in-out;
-    // padding: 0 3rem ;
-    border-radius: 50px;
 	background: #282c34;
 	color: #fff;
+    // padding: 0 3rem ;
 }
 `;
 
@@ -79,9 +76,9 @@ width: 100vw; */
 
 export const NavBtnLink = styled(Link)`
 border-radius: 50px;
-background: #808080;
+background: #282c34;
 padding: 7px 40px;
-color: #000000;
+color: #fff;
 outline: none;
 border: 1px solid gray;
 cursor: pointer;
