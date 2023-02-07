@@ -19,25 +19,18 @@ display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
-height: 100%;
+height: 120%;
 cursor: pointer;
 &.active {
-	// color: #808080;
-	color: #000;
+    background: #282c34;
+	color: #fff;
     padding: 0 1rem;
-    // border-radius: 50px;
-	background: #fff;
-    // border: 1px solid gray;
-	text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 40px #000; 
-
 }
 &:hover {
-	transition: all 0.5s ease-in-out;
-    // padding: 0 3rem ;
-    border-radius: 50px;
+	transition: all 0.3s ease-in-out;
 	background: #282c34;
 	color: #fff;
-	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff; 
+    // padding: 0 3rem ;
 }
 `;
 
