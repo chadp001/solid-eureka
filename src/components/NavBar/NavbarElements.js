@@ -25,12 +25,16 @@ cursor: pointer;
     background: #282c34;
 	color: #fff;
     padding: 0 1rem;
+	text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 40px #000; 
+
 }
 &:hover {
 	transition: all 0.3s ease-in-out;
 	background: #282c34;
 	color: #fff;
-    // padding: 0 3rem ;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff; 
+	// height: 100%;
+	// cursor: pointer;
 }
 `;
 
